@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exclusão de Dados — SSR Labs</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue: #0A84FF;
+    --cyan: #00C2FF;
+    --dark: #0D1426;
+    --surface: #111827;
+    --border: #1e2d4a;
+    --text: #E8EDF5;
+    --dim: #6B7280;
+    --green: #22d3a5;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--dark); color: var(--text); font-family: 'Inter', sans-serif; line-height: 1.7; }
+  header {
+    background: rgba(17,24,39,0.95);
+    border-bottom: 1px solid var(--border);
+    padding: 20px 32px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .logo-mark {
+    width: 36px; height: 36px;
+    background: linear-gradient(135deg, #0A84FF, #00C2FF);
+    border-radius: 8px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900; font-size: 13px; color: #fff;
+  }
+  .logo-text { font-family: 'Montserrat', sans-serif; font-weight: 700; font-size: 17px; color: #fff; }
+  .logo-text span { color: var(--cyan); }
+  .container { max-width: 760px; margin: 60px auto; padding: 0 32px 80px; }
+  .page-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px; font-weight: 800;
+    color: #fff; margin-bottom: 8px;
+  }
+  .updated { font-size: 13px; color: var(--dim); margin-bottom: 40px; }
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px; font-weight: 700;
+    color: #fff; margin: 36px 0 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+  }
+  p { font-size: 14px; color: var(--dim); margin-bottom: 14px; }
+  ul { padding-left: 20px; margin-bottom: 14px; }
+  ul li { font-size: 14px; color: var(--dim); margin-bottom: 6px; }
+  a { color: var(--cyan); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 24px 0;
+  }
+  .step {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    background: #111827;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .step-num {
+    width: 32px; height: 32px;
+    background: linear-gradient(135deg, #0A84FF, #00C2FF);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700; font-size: 13px; color: #fff;
+    flex-shrink: 0;
+  }
+  .step-content {}
+  .step-title { font-weight: 600; color: #fff; font-size: 14px; margin-bottom: 4px; }
+  .step-desc { font-size: 13px; color: var(--dim); }
+  .info-box {
+    background: rgba(34,211,165,0.06);
+    border: 1px solid rgba(34,211,165,0.2);
+    border-radius: 8px;
+    padding: 16px 20px;
+    margin: 24px 0;
+    font-size: 13px;
+    color: var(--green);
+  }
+  footer {
+    text-align: center;
+    padding: 32px;
+    font-size: 12px;
+    color: var(--dim);
+    border-top: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo-mark">SSR</div>
+  <div class="logo-text">SSR <span>Labs</span></div>
+</header>
+
+<div class="container">
+  <h1 class="page-title">Exclusão de Dados</h1>
+  <p class="updated">Última atualização: maio de 2025</p>
+
+  <p>A SSR Labs respeita seu direito à privacidade e à exclusão dos seus dados pessoais, em conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018) e as políticas da Meta.</p>
+
+  <h2>Como solicitar a exclusão dos seus dados</h2>
+
+  <p>Para solicitar a exclusão completa dos seus dados da plataforma SSR Labs, siga os passos abaixo:</p>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <div class="step-title">Entre em contato por e-mail</div>
+        <div class="step-desc">Envie um e-mail para <a href="mailto:yuri@ssrlabs.com.br">yuri@ssrlabs.com.br</a> com o assunto "Solicitação de Exclusão de Dados".</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <div class="step-title">Informe seus dados de identificação</div>
+        <div class="step-desc">No corpo do e-mail informe: nome completo, e-mail cadastrado na plataforma e número de telefone associado à conta.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <div class="step-title">Aguarde a confirmação</div>
+        <div class="step-desc">Você receberá uma confirmação de recebimento em até 24 horas e a exclusão será processada em até 15 dias úteis.</div>
+      </div>
+    </div>
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <div class="step-title">Confirmação de exclusão</div>
+        <div class="step-desc">Após a conclusão, você receberá um e-mail confirmando que todos os seus dados foram removidos dos nossos sistemas.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="info-box">
+    ✓ Processamos todas as solicitações de exclusão em até 15 dias úteis, conforme exigido pela LGPD.
+  </div>
+
+  <h2>O que será excluído</h2>
+  <ul>
+    <li>Dados cadastrais da conta</li>
+    <li>Histórico de conversas e mensagens</li>
+    <li>Configurações e preferências da conta</li>
+    <li>Dados de uso da plataforma</li>
+    <li>Qualquer dado pessoal associado à sua conta</li>
+  </ul>
+
+  <h2>Dados que podem ser retidos</h2>
+  <p>Alguns dados podem ser retidos por obrigação legal, como registros financeiros exigidos pela legislação fiscal brasileira, pelo período mínimo exigido por lei.</p>
+
+  <h2>Contato</h2>
+  <p>Para dúvidas sobre exclusão de dados ou privacidade:</p>
+  <ul>
+    <li>Email: <a href="mailto:yuri@ssrlabs.com.br">yuri@ssrlabs.com.br</a></li>
+    <li>Site: <a href="https://ssrlabs.com.br">ssrlabs.com.br</a></li>
+    <li>CNPJ: 43.616.737/0001-46 — SSR Informática</li>
+  </ul>
+</div>
+
+<footer>
+  © 2026 SSR Labs — SSR Informática — CNPJ: 43.616.737/0001-46
+</footer>
+
+</body>
+</html>
